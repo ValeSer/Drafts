@@ -1,11 +1,11 @@
-let Airplane = {};
-  Airplane.availableAirplanes = [
-    {name: 'AeroJet',
+let availableAirplanes = [
+    { name: 'AeroJet',
       fuelCapacity: 800
       },
-    {name: 'SkyJet',
+    { name: 'SkyJet',
       fuelCapacity: 500
     }
   ];
 
-export default Airplane;
+
+
