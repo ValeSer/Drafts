@@ -9,4 +9,7 @@ let availableAirplanes = [
     }
   ];
 
-  let flightRequirements = {};
+  let flightRequirements = {
+    requiredStaff: 4
+  };
+ 
