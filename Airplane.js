@@ -22,5 +22,5 @@ let availableAirplanes = [
    }
  }
 
-
+ export {availableAirplanes, flightRequirements, meetsStaffRequirements };
 
