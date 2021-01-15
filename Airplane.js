@@ -8,3 +8,5 @@ let availableAirplanes = [
       availableStaff: ['pilots', 'flightAttendants']
     }
   ];
+
+  let flightRequirements = {};
