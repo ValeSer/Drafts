@@ -12,4 +12,8 @@ let availableAirplanes = [
   let flightRequirements = {
     requiredStaff: 4
   };
+
+function meetsStaffRequirements(availableStaff, requiredStaff) {
+
+}
  
