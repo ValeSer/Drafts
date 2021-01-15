@@ -1,3 +1,4 @@
+
 let availableAirplanes = [
     { name: 'AeroJet',
       fuelCapacity: 800,
@@ -9,11 +10,17 @@ let availableAirplanes = [
     }
   ];
 
-  let flightRequirements = {
-    requiredStaff: 4
-  };
+ let flightRequirements = {
+   requiredStaff: 4
+ };
 
-function meetsStaffRequirements(availableStaff, requiredStaff) {
+ function meetsStaffRequirements(availableStaff, requiredStaff) {
+   if (availableStaff.length >= requiredStaff) {
+     return true;
+   } else {
+     return false;
+   }
+ }
 
-}
- 
+
+
