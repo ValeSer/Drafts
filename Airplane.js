@@ -26,6 +26,9 @@ let availableAirplanes = [
      return false;
    }
  }
+ function meetsSpeedRangeRequirements(maxSpeed, minSpeed, requiredSpeedRange) {
+
+}
 
 export {availableAirplanes, flightRequirements, meetsStaffRequirements  };
 
