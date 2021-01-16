@@ -15,7 +15,8 @@ let availableAirplanes = [
   ];
 
  let flightRequirements = {
-   requiredStaff: 4
+   requiredStaff: 4,
+   requiredSpeedRange: 700
  };
 
  function meetsStaffRequirements(availableStaff, requiredStaff) {
