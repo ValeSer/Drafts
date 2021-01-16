@@ -27,8 +27,8 @@ let availableAirplanes = [
    }
  }
  function meetsSpeedRangeRequirements(maxSpeed, minSpeed, requiredSpeedRange) {
-
-}
+    let range = maxSpeed - minSpeed;
+  };
 
 export {availableAirplanes, flightRequirements, meetsStaffRequirements  };
 
