@@ -1,9 +1,17 @@
-import Airplane from './airplane';
+import {availableAirplanes, flightRequirements, meetsStaffRequirements, meetsSpeedRangeRequirements} from './airplane';
 
 function displayFuelCapacity() {
-  Airplane.availableAirplanes.forEach(function(element){
+ availableAirplanes.forEach(function(element){
   console.log('Fuel Capacity of ' + element.name + ': ' + element.fuelCapacity);
   });
 }
 
-displayFuelCapacity()
+displayFuelCapacity();
+
+function displayStaffStatus() {
+  availableAirplanes.forEach(function(element) {
+    console.log(element.name + 'meets staff requirements: ' + meetsStaffRequirements(element.availableStaff, flightRequirements.requiredStaff) );
+    });
+}
+
+displayStaffStatus();
