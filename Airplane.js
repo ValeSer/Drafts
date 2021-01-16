@@ -28,7 +28,13 @@ let availableAirplanes = [
  }
  function meetsSpeedRangeRequirements(maxSpeed, minSpeed, requiredSpeedRange) {
     let range = maxSpeed - minSpeed;
+    if (range > requiredSpeedRange) {
+   return true;
+    } else {
+   return false;
+    }
   };
+ 
 
 export {availableAirplanes, flightRequirements, meetsStaffRequirements  };
 
