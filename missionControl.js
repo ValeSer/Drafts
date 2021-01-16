@@ -18,5 +18,5 @@ displayStaffStatus();
 
 function displaySpeedRangeStatus() {
     availableAirplanes.forEach(function(element){
-      
+        console.log(element.name);
     });
