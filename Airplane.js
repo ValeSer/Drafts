@@ -35,5 +35,4 @@ function meetsSpeedRangeRequirements(maxSpeed, minSpeed, requiredSpeedRange) {
    }
  };
 
- export { flightRequirements as flightReqs,meetsStaffRequirements as meetsStaffReqs, meetsSpeedRangeRequirements as meetsSpeedRangeReqs };
-
+ export default meetsSpeedRangeRequirements;
