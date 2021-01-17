@@ -1,5 +1,4 @@
-
-export let availableAirplanes = [
+let availableAirplanes = [
     { name: 'AeroJet',
       fuelCapacity: 800,
       availableStaff: ['pilots', 'flightAttendants', 'engineers', 'medicalAssistance', 'sensorOperators'],
@@ -14,12 +13,12 @@ export let availableAirplanes = [
     }
   ];
 
- export let flightRequirements = {
+ let flightRequirements = {
    requiredStaff: 4,
    requiredSpeedRange: 700
  };
 
-export function meetsStaffRequirements(availableStaff, requiredStaff) {
+ function meetsStaffRequirements(availableStaff, requiredStaff) {
    if (availableStaff.length >= requiredStaff) {
      return true;
    } else {
@@ -27,7 +26,7 @@ export function meetsStaffRequirements(availableStaff, requiredStaff) {
    }
  }
 
-export function meetsSpeedRangeRequirements(maxSpeed, minSpeed, requiredSpeedRange) {
+function meetsSpeedRangeRequirements(maxSpeed, minSpeed, requiredSpeedRange) {
    let range = maxSpeed - minSpeed;
    if (range > requiredSpeedRange) {
   return true;
