@@ -18,3 +18,5 @@ const inventory = {
   }
 
   let orderPromise = orderSunglasses();
+
+  console.log(orderPromise);
