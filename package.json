@@ -1,0 +1,19 @@
+{
+  "name": "drafts",
+  "version": "1.0.0",
+  "description": "Learning some more Javascript",
+  "main": "Airplane.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ValeSer/Drafts.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ValeSer/Drafts/issues"
+  },
+  "homepage": "https://github.com/ValeSer/Drafts#readme"
+}
