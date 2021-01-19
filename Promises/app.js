@@ -6,7 +6,7 @@ function usingSTO() {
   console.log('Hey, I am in the middle');
 }
 
-setTimeout(usingSTO, 0 );
+setTimeout(usingSTO, 89 );
 
 
 
