@@ -1,22 +1,16 @@
-const inventory = {
-    sunglasses: 0,
-    pants: 1088,
-    bags: 1344
-  };
-  
-  // Write your code below:
-  function myExecutor(resolve, reject) {
-    if (inventory.sunglasses > 0){
-      resolve('Sunglasses order processed.');
-    } else {
-      reject('That item is sold out.');
-    }
-  };
+console.log("This is the first line of code in app.js.");
+// Keep the line above as the first line of code
+// Write your code here:
 
-  function orderSunglasses() {
-    return new Promise(myExecutor);
-  }
+function usingSTO() {
+  console.log('Hey, I am in the middle');
+}
 
-  let orderPromise = orderSunglasses();
 
-  console.log(orderPromise);
+
+
+
+
+
+// Keep the line below as the last line of code:
+console.log("This is the last line of code in app.js.");
