@@ -1,18 +1,9 @@
-console.log("This is the first line of code in app.js.");
-// Keep the line above as the first line of code
-// Write your code here:
+const {checkInventory} = require('./library.js');
 
-function usingSTO() {
-  console.log('Hey, I am in the middle');
-}
+const order = [['sunglasses', 1], ['bags', 2]];
 
-setTimeout(usingSTO, 89 );
+// Write your code below:
 
 
 
 
-
-
-
-// Keep the line below as the last line of code:
-console.log("This is the last line of code in app.js.");
