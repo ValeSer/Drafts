@@ -8,5 +8,8 @@ function handleSuccess(resolvedValue) {
     console.log(resolvedValue);
   }
 
+  function handleFailure(rejectionReason) {
+    console.log(rejectionReason);
+  }
 
 
