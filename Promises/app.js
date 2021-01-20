@@ -1,16 +1,22 @@
-const {checkInventory} = require('./library.js');
+const {checkInventory, processPayment, shipOrder} = require('./library.js');
 
-const order = [['sunglasses', 1], ['bags', 2]];
-
-const handleSuccess = (resolvedValue) => {
-  console.log(resolvedValue);
+const order = {
+  items: [['sunglasses', 1], ['bags', 2]],
+  giftcardBalance: 79.82
 };
 
-const handleFailure = (rejectReason) => {
-  console.log(rejectReason);
-};
-
-// Write your code below:
-
-checkInventory(order).then(handleSuccess).catch(handleFailure);
-
+checkInventory(order)
+.then((resolvedValueArray) => {
+  // Write the correct return statement here:
+ 
+})
+.then((resolvedValueArray) => {
+  // Write the correct return statement here:
+  
+})
+.then((successMessage) => {
+  console.log(successMessage);
+})
+.catch((errorMessage) => {
+  console.log(errorMessage);
+});
