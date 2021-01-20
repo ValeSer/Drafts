@@ -12,5 +12,5 @@ const handleFailure = (rejectReason) => {
 
 // Write your code below:
 
-checkInventory(order);
+checkInventory(order).then(handleSuccess);
 
