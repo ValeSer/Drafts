@@ -17,4 +17,5 @@ const checkPants = checkAvailability('pants', 'Favorite Supply Co.');
 
 const checkBags = checkAvailability('bags', 'Favorite Supply Co.');
 
-Promise.all([checkSunglasses, checkPants, checkBags]).then(onFulfill);
+Promise.all([checkSunglasses, checkPants, checkBags]).then(onFulfill).catch(onReject);
+
