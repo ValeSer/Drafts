@@ -109,10 +109,8 @@ function withConstructor(num){
     
     
     
-    // Leave this commented out until step 3:
-    /*
+   
     withAsync(100)
       .then((resolveValue) => {
       console.log(` withAsync(100) returned a promise which resolved to: ${resolveValue}.`);
     })
-    */
