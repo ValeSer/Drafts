@@ -1,19 +1,14 @@
-const {checkInventory, processPayment, shipOrder} = require('./library.js');
+const {checkAvailability} = require('./library.js');
 
-const order = {
-  items: [['sunglasses', 1], ['bags', 2]],
-  giftcardBalance: 79.82
+const onFulfill = (itemsArray) => {
+  console.log(`Items checked: ${itemsArray}`);
+  console.log(`Every item was available from the distributor. Placing order now.`);
 };
 
-// Refactor the code below:
+const onReject = (rejectionReason) => {
+	console.log(rejectionReason);
+};
 
-checkInventory(order)
-  .then((resolvedValueArray) => {
-      return processPayment(resolvedValueArray); 
-    })
-  .then((resolvedValueArray) => {
-      return shipOrder(resolvedValueArray);
-    })
-  .then((successMessage) => {
-      console.log(successMessage);
-    });
+// Write your code below:
+
+
