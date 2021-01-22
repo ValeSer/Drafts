@@ -11,3 +11,4 @@ const {shopForBeans, soakTheBeans, cookTheBeans} = require('./library.js');
     console.log(dinner);
  }
  
+ makeBeans();
