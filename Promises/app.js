@@ -5,5 +5,7 @@ const {shopForBeans, soakTheBeans, cookTheBeans} = require('./library.js');
     let type = await shopForBeans();
 
     let isSoft = await soakTheBeans(type);
+
+    let dinner = await cookTheBeans(isSoft);
  }
  }
