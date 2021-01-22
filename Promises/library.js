@@ -1,26 +1,24 @@
-const checkAvailability = (itemName, distributorName) => {
-    console.log(`Checking availability of ${itemName} at ${distributorName}...`);
+/*
+this is the brainstormDinner function. It's a little silly. It returns a promise that uses a series of setTimeout() functions to simulate a time-consuming asynchronous action. It's a good example of "callback hell" or "the pyramid of doom," two ways people describe how confusing a bunch of nested callback functions can become.
+*/
+
+const brainstormDinner = () => {
     return new Promise((resolve, reject) => {
+    console.log(`I have to decide what's for dinner...`)
+    setTimeout(() => {
+      console.log('Should I make salad...?')
+      setTimeout(() => {
+        console.log('Should I make ramen...?')
         setTimeout(() => {
-            if (restockSuccess()) {
-                console.log(`${itemName} are in stock at ${distributorName}`)
-                resolve(itemName);
-            } else {
-                reject(`Error: ${itemName} is unavailable from ${distributorName} at this time.`);
-            }
-        }, 1000);
-    });
-};
-
-module.exports = { checkAvailability };
-
-// checkAvailability() expects two string arguments: an item and a distributor. 
-//It returns a promise. The function simulates checking that the given distributor has a given item. 
-//80% of the time it will resolve the promise with the item, and 20% of the time it will reject the promise
-// with an error message stating that the item isn’t available.
-// This is a function that returns true 80% of the time
-// We're using it to simulate a request to the distributor being successful this often
-
-function restockSuccess() {
-    return (Math.random() > .2);
-}
+          console.log('Should I make eggs...?')
+          setTimeout(() => {
+            console.log('Should I make chicken...?')
+            resolve('beans')
+          }, 1000)
+        }, 1000)
+      }, 1000)
+    }, 1000)
+  })
+  }
+  
+  module.exports = brainstormDinner
