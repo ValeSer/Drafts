@@ -13,5 +13,6 @@ async function hostDinnerParty() {
   }
 }
 
+hostDinnerParty();
 
 
