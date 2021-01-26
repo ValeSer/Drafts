@@ -15,7 +15,8 @@ const getSuggestions = () => {
   //inputField.value grabs what is in the inputField and assigns it to the variable wordQuery
   const endpoint = `${url}${queryParams}${wordQuery}`;
   const xhr = new XMLHttpRequest ();
-
+  xhr.responseType = 'json';
+  // When data is sent back, it will be in JSON format.
 
 }
 
