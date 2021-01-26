@@ -1,7 +1,9 @@
 // Information to reach API
 const url = 'https://api.datamuse.com/words?'
 const queryParams = 'rel_rhy='
-// 'rel_rhy=' is the start of a parameter for the query string. This parameter will narrow your search to words that rhyme.
+// 'rel_rhy=' is the start of a parameter for the query string. 
+//This parameter will narrow your search to words that rhyme.
+
 // Selecting page elements
 const inputField = document.querySelector('#input');
 const submit = document.querySelector('#submit');
@@ -11,6 +13,10 @@ const responseField = document.querySelector('#responseField');
 const getSuggestions = () => {
   const wordQuery = inputField.value;
   //inputField.value grabs what is in the inputField and assigns it to the variable wordQuery
+  const endpoint = `${url}${queryParams}${wordQuery}`;
+
+
+
 }
 
 // Clear previous results and display results to webpage
