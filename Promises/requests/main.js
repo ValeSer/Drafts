@@ -1,8 +1,5 @@
-console.log('First message!');
-setTimeout(() => {
-   console.log('This message will always run last...');
-}, 0);
-console.log('Second message!');
+// First, we need to create the XMLHttpRequest object using the new operator. Save this object in a const called xhr.
 
-// changing seconds does not affect the order of messages but just the running time.
-// 0 seconds means it runs immediately but yet the last one
+// Note: While the code will work regardless of how you name your variables, it is a common practice to name this object xhr.
+
+const xhr = new XMLHttpRequest();
