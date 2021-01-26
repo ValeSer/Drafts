@@ -8,8 +8,12 @@ const url = 'https://api-to-call.com/endpoint';
 
 xhr.responseType = 'json';
 
+//The purpose of this conditional statement checks to see if the request has finished.
+
 xhr.onreadystatechange = () => {
     if (xhr.readyState === XMLHttpRequest.DONE) {
       
     }
   }
+
+  
