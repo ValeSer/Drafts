@@ -12,7 +12,8 @@ xhr.responseType = 'json';
 
 xhr.onreadystatechange = () => {
     if (xhr.readyState === XMLHttpRequest.DONE) {
-      
+        return xhr.response
+    }
     }
   }
 
