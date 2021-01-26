@@ -49,3 +49,8 @@ const changeButton = () => {
 }
 
 jsonButton.addEventListener('click', generateJson);
+
+
+// You’ll see JSON being displayed on the page. JSON, JavaScript Object Notation, 
+// will be the format in which our data is sent to us. 
+// That button you click produces a GET request. 
