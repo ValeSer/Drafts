@@ -17,6 +17,7 @@ const getSuggestions = () => {
   const xhr = new XMLHttpRequest ();
   xhr.responseType = 'json';
   // When data is sent back, it will be in JSON format.
+  xhr.onreadystatechange = () => {};
 
 }
 
