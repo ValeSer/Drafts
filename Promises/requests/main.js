@@ -14,7 +14,7 @@ const getSuggestions = () => {
   const wordQuery = inputField.value;
   //inputField.value grabs what is in the inputField and assigns it to the variable wordQuery
   const endpoint = `${url}${queryParams}${wordQuery}`;
-
+  const xhr = new XMLHttpRequest ();
 
 
 }
