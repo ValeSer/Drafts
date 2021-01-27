@@ -7,4 +7,9 @@ const data = JSON.stringify({id: '200'});
 xhr.responseType = 'json';
 
 //.onreadystatechange will contain the event handler that will be called when xhr‘s state changes.
-xhr.onreadystatechange = () => {}
+xhr.onreadystatechange = () => {
+    // The response property will contain the data that we’re getting back from the POST request
+    if (xhr.readyState === XMLHttpRequest.DONE) {
+        return xhr.response 
+      }
+}
