@@ -2,8 +2,6 @@
 const url = 'https://api.datamuse.com/words?';
 const queryParams = 'rel_jjb=';
 const additionalParams = '&topics='
-// the & character at the start of the string is used to separate our parameters. 
-// The = character will join the key 'topics' to a value.
 
 // Selecting page elements
 const inputField = document.querySelector('#input');
@@ -14,6 +12,7 @@ const responseField = document.querySelector('#responseField');
 // AJAX function
 const getSuggestions = () => {
   const wordQuery = inputField.value;
+  const topicQuery = topicField.value;
   const endpoint = `${url}${queryParams}${wordQuery}`;
   
   const xhr = new XMLHttpRequest();
