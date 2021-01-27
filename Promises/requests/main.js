@@ -17,7 +17,7 @@ const getSuggestions = () => {
   xhr.responseType = 'json';
   xhr.onreadystatechange = () => {
     if (xhr.readyState === XMLHttpRequest.DONE) {
-      renderRawResponse(xhr.response)
+      renderResponse(xhr.response)
     }
     //the following method call will create a new request using the two arguments:
     xhr.open('GET', endpoint);
