@@ -19,6 +19,10 @@ const getSuggestions = () => {
     if (xhr.readyState === XMLHttpRequest.DONE) {
       renderRawResponse(xhr.response)
     }
+    //the following method call will create a new request using the two arguments:
+    xhr.open('GET', endpoint);
+    // the following method will send the request to the server
+    xhr.send()
   };
 }
 
