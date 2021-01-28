@@ -18,6 +18,8 @@ const shortenUrl = () => {
       } 
       xhr.open('POST', url);
     }
+    xhr.setRequestHeader('Content-type', 'application/json');
+    xhr.setRequestHeader('apikey', apiKey);
   } 
 
 
