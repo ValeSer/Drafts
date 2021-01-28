@@ -20,6 +20,7 @@ const shortenUrl = () => {
     }
     xhr.setRequestHeader('Content-type', 'application/json');
     xhr.setRequestHeader('apikey', apiKey);
+    xhr.send(data);
   } 
 
 
