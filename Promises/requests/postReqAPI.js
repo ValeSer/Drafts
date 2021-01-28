@@ -12,6 +12,7 @@ const shortenUrl = () => {
     const urlToShorten = inputField.value
     const data = JSON.stringify({destination: urlToShorten});
     const xhr = new XMLHttpRequest();
+    xhr.responseType = 'json'
   }
 
 
