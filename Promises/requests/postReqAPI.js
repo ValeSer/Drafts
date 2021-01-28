@@ -9,8 +9,9 @@ const responseField = document.querySelector('#responseField');
 
 // AJAX functions
 const shortenUrl = () => {
-  const urlToShorten = inputField.value
-}
+    const urlToShorten = inputField.value
+    const data = JSON.stringify({destination: urlToShorten});
+  }
 
 
 // Clear page and call AJAX functions
