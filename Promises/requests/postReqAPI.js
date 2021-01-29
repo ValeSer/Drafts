@@ -1,5 +1,5 @@
 // Information to reach API
-const apiKey = 'xxx';
+const apiKey = 'd54b72985f784a32a0fae7189a6d5c4f';
 const url = 'https://api.rebrandly.com/v1/links';
 
 // Some page elements
@@ -17,11 +17,11 @@ const shortenUrl = () => {
     if (xhr.readyState === XMLHttpRequest.DONE) {
       renderResponse(xhr.response);
     } 
-    xhr.open('POST', url);
   }
+  xhr.open('POST', url);
   xhr.setRequestHeader('Content-type', 'application/json');
-xhr.setRequestHeader('apikey', apiKey);
-xhr.send(data);
+  xhr.setRequestHeader('apikey', apiKey);
+  xhr.send(data);
 } 
 
 
