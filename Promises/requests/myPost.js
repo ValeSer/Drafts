@@ -3,3 +3,4 @@
 const xhr = new XMLHttpRequest();
 const url = 'https://api.datamuse.com/words';
 
+xhr.responseType = 'json';
