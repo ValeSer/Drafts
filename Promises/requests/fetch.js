@@ -6,3 +6,4 @@ fetch('https://api-to-call.com/endpoint').then(response => {
   }, networkError => {
     console.log(networkError.message);
   })
+  // networkError will handle our failures
