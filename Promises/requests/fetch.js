@@ -5,5 +5,6 @@ fetch('https://api-to-call.com/endpoint').then(response => {
   throw new Error('Request failed!');
   }, networkError => {
     console.log(networkError.message);
+  }).then(jsonResponse => {
+    return jsonResponse;
   })
-  // networkError will handle our failures
