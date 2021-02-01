@@ -12,6 +12,7 @@ const responseField = document.querySelector('#responseField');
 // AJAX function
 const getSuggestions = () => {
   const wordQuery = inputField.value;
+  const endpoint = `${url}${queryParams}${wordQuery}`;
 }
 
 // Clears previous results and display results to webpage
