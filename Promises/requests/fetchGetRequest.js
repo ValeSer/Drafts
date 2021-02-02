@@ -14,9 +14,8 @@ const getSuggestions = () => {
   fetch(endpoint, {cache: 'no-cache'}).then(response => {
     if (response.ok){
       return response.json();
-      //By returning response.json(), the next function that is .then() 
-      //chained to it will receive a Promise with JSON data.
     }
+    throw new Error('Request failed!');
   });
 }
 
