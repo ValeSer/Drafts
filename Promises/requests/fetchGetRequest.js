@@ -13,7 +13,7 @@ const getSuggestions = () => {
   const endpoint = `${url}${queryParams}${wordQuery}`;
   fetch(endpoint, {cache: 'no-cache'}).then(response => {
     if (response.ok){
-      renderJsonResponse(response);
+      return response.json();
     }
   });
 }
