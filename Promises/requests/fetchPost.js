@@ -6,4 +6,5 @@ fetch('https://api-to-call.com/endpoint', {
     return response.json();
   }
   throw new Error('Request failed!');
-})
+  }, networkError => {console.log(networkError.message);
+});
