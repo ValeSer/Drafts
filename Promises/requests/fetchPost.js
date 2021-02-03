@@ -7,4 +7,8 @@ fetch('https://api-to-call.com/endpoint', {
   }
   throw new Error('Request failed!');
   }, networkError => {console.log(networkError.message);
+}).then(jsonResponse => {
+    return jsonResponse();
+    //The purpose of this step is to view the JSON that
+    // was returned from the previous .then().
 });
