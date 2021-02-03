@@ -5,4 +5,5 @@ fetch('https://api-to-call.com/endpoint', {
   if(response.ok) {
     return response.json();
   }
+  throw new Error('Request failed!');
 })
