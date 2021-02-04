@@ -20,7 +20,7 @@ const shortenUrl = () => {
     body: data
   }).then(response => {
     if(response.ok) {
-      renderJsonResponse(response);
+        return response.json();
     }
   });
 }
