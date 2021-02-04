@@ -16,7 +16,8 @@ const shortenUrl = () => {
       headers: {
         'Content-type': 'application/json',
     'apikey': apiKey
-      }
+      },
+      body: data
     });
   }
 
