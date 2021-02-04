@@ -1,5 +1,5 @@
 // Information to reach API
-const apiKey = 'd-------------1';
+const apiKey = '-----';
 const url = 'https://api.rebrandly.com/v1/links';
 
 // Some page elements
@@ -9,6 +9,9 @@ const responseField = document.querySelector('#responseField');
 
 // AJAX functions
 const shortenUrl = () => {
+  const urlToShorten = inputField.value;
+  //urlToShorten will keep the value of 
+  //what is being typed into the input field.
 }
 
 // Clear page and call AJAX functions
