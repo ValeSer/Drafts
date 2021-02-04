@@ -25,7 +25,7 @@ const shortenUrl = () => {
       throw new Error('Request failed!');
     }, networkError => {
         console.log(networkError.message)}).then(jsonResponse => {
-            renderRawResponse(jsonResponse);
+            renderResponse(jsonResponse);
   }
   
 // Clear page and call AJAX functions
