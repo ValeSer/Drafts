@@ -1,4 +1,7 @@
 const getData = async () => {
     try {}
-  catch(error) {}
-};
+    catch(error) {
+      console.log(error);
+    }
+  };
+  
