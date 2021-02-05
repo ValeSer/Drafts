@@ -1,1 +1,4 @@
-const getData = async () => {};
+const getData = async () => {
+    try {}
+  catch(error) {}
+};
