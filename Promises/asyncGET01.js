@@ -4,6 +4,7 @@ const getData = async () => {
       fetch('https://api-to-call.com/endpoint');
       if (response.ok) {
         const jsonResponse = await response.json()
+        return jsonResponse;
       }
     } catch(error) {
       console.log(error);
