@@ -8,7 +8,7 @@ const submit = document.querySelector('#submit');
 const responseField = document.querySelector('#responseField');
 
 // AJAX function
-
+const getSuggestions = async () => {}
 // Code goes here
 
 
