@@ -7,18 +7,25 @@ const inputField = document.querySelector('#input');
 const shortenButton = document.querySelector('#shorten');
 const responseField = document.querySelector('#responseField');
 
-// AJAX functions
+/ AJAX functions
 // Code goes here
 const shortenUrl = async () => {
-    const urlToShorten = inputField.value
-    const data = JSON.stringify({destination: urlToShorten})
-    try{
-      const response = await fetch();
-    }
-    catch(error) {
-      console.log(error);
-    }
+  const urlToShorten = inputField.value
+  const data = JSON.stringify({destination: urlToShorten})
+  try{
+    const response = await fetch(url, {
+      method: 'POST',
+      body: data,
+      headers: {
+        'Content-type': 'application/json',
+'apikey': apiKey
+      }
+    });
   }
+  catch(error) {
+    console.log(error);
+  }
+}
   
 
 // Clear page and call AJAX functions
