@@ -12,11 +12,14 @@ const responseField = document.querySelector('#responseField');
 const shortenUrl = async () => {
     const urlToShorten = inputField.value
     const data = JSON.stringify({destination: urlToShorten})
-    try{}
+    try{
+      const response = await fetch();
+    }
     catch(error) {
       console.log(error);
     }
   }
+  
 
 // Clear page and call AJAX functions
 const displayShortUrl = (event) => {
