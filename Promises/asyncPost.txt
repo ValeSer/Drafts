@@ -1,0 +1,63 @@
+1.
+At the top of main.js create an async arrow function and save it to a const getData().
+
+The async keyword will ensure that the function returns a promise.
+
+HINT
+To create an async arrow function use the following syntax:
+
+const getData = async ()  => {};
+
+2.
+In the code block for getData, we should add a try statement with an empty code block.
+
+In case things go wrong, we need some code to handle that. Below the try code block, add a catch statement and pass in error as an argument.
+
+Then, in the catch statement code block, log error to the console.
+
+HINT
+The syntax will look something like:
+
+try {
+  // Code to handle request
+} catch (error)  {
+  console.log(error)
+}
+
+3.
+We now have to consider what we want to do inside of the try code block. Since we are making a POST request, we should start by using the await keyword before calling the fetch() function.
+
+We will have to save the returned promise in a variable called response using the const keyword.
+
+HINT
+The syntax will look like:
+
+try {
+  const response = await fetch()
+} catch (error)  {
+  // Code to handle error
+}
+
+4.
+In the fetch() call that we just made, pass in the following URL to the function as a string for the first argument:
+
+https://api-to-call.com/endpoint
+Then as our second argument, let’s pass in an empty object for now.
+
+HINT
+Remember to wrap the URL in quotes.
+
+5.
+Let’s now fill in the request options in our second argument.
+
+First, add the method property and the value is 'POST'. Then we have to include a body property and the value is JSON.stringify({id: 200}).
+
+Remember to separate the properties with a comma.
+
+HINT
+The general syntax to create the properties will be:
+
+const response = await fetch(url, { 
+  property1: value1, 
+  property2: value2
+});
