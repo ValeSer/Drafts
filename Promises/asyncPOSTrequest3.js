@@ -22,9 +22,9 @@ const shortenUrl = async () => {
       }
     });
     if (response.ok) {
-        const jsonResponse = await response.json();
-        renderRawResponse(jsonResponse);
-      }
+      const jsonResponse = await response.json();
+      renderResponse(jsonResponse);
+    }
   }
   catch(error) {
     console.log(error);
