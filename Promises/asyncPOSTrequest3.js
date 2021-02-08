@@ -7,10 +7,11 @@ const inputField = document.querySelector('#input');
 const shortenButton = document.querySelector('#shorten');
 const responseField = document.querySelector('#responseField');
 
-// AJAX functions
+//AJAX functions
 // Code goes here
 const shortenUrl = async () => {
-  
+  const urlToShorten = inputField.value
+  const data = JSON.stringify({destination: urlToShorten})
 }
 
 // Clear page and call AJAX functions

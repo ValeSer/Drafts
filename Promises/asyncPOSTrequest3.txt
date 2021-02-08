@@ -5,3 +5,9 @@ At the top of main.js, assign apiKey to your Rebrandly API key.
 2.
 Under the comment “AJAX functions”, create a new arrow function 
 and assign it to a const shortenUrl() using the async keyword.
+
+HINT
+The syntax will look like:
+
+const shortenUrl = async () => {}
+
