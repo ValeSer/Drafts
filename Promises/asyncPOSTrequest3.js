@@ -9,6 +9,9 @@ const responseField = document.querySelector('#responseField');
 
 // AJAX functions
 // Code goes here
+const shortenUrl = async () => {
+  
+}
 
 // Clear page and call AJAX functions
 const displayShortUrl = (event) => {
