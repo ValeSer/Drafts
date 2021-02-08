@@ -1,3 +1,5 @@
+Async POST exercise: what to do step by step
+
 1.
 At the top of main.js create an async arrow function and save it to a const getData().
 
@@ -61,3 +63,28 @@ const response = await fetch(url, {
   property1: value1, 
   property2: value2
 });
+
+6.
+After the code block of response, we should create an if statement that checks the ok property of the response object.
+
+Inside the code block of the conditional statement, await the resolution of calling the .json() method on response. 
+Save the returned object to a variable called jsonResponse using the keyword const.
+
+HINT
+The syntax will be:
+
+if (response.ok) {
+  const jsonResponse = await response.json()
+}
+
+7.
+Now that we have what we want, we should return jsonResponse 
+directly below the code written in the previous step.
+
+Like with previous boilerplate exercises, we’re practicing writing code. 
+Normally, we would want to do more beyond this step of returning jsonResponse.
+
+8.
+Below the if conditional, throw a new Error() with the message 'Request failed!'
+
+Nice work, didn’t that feel very similar to making a GET request?
