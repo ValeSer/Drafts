@@ -23,6 +23,7 @@ const shortenUrl = async () => {
     });
     if (response.ok) {
         const jsonResponse = await response.json();
+        renderRawResponse(jsonResponse);
       }
   }
   catch(error) {
