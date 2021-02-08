@@ -11,14 +11,13 @@ const responseField = document.querySelector('#responseField');
 // Code goes here
 const getSuggestions = async () => {
     try {
-  
+      const response = await fetch(endpoint, {cache: 'no-cache'});
     }
     catch(error) {
       console.log(error);
     }
     const wordQuery = inputField.value;
     const endpoint = `${url}${queryParams}${wordQuery}`;
-  
   }
 
 // Clear previous results and display results to webpage
