@@ -8,11 +8,11 @@ const submit = document.querySelector('#submit');
 const responseField = document.querySelector('#responseField');
 
 // AJAX function
-const getSuggestions = async () => {
-  const wordQuery = inputField.value;
-}
 // Code goes here
-
+const getSuggestions = async () => {
+    const wordQuery = inputField.value;
+    const endpoint = `${url}${queryParams}${wordQuery}`;
+  }
 
 // Clear previous results and display results to webpage
 const displaySuggestions = (event) => {
