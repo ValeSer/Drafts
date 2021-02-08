@@ -4,6 +4,9 @@ const getData = async () => {
         method: 'POST',
         body: JSON.stringify({id: 200})
       });
+      if (response.ok) {
+        const jsonResponse = await response.json();
+      }
     }
     catch(error) {
       console.log(error);
